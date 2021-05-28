@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: COSUPLOAD-SERVICE
+  servlet:
+    multipart:
+      max-file-size: 5MB
+server:
+  port: 8083
+eureka:
+  client:
+    service-url:
+      defaultZone: http://121.196.169.60:10086/eureka
+    registry-fetch-interval-seconds: 5
+  instance:
+    prefer-ip-address: true
+    ip-address: 139.155.235.128
+raorao:
+  upload:
+    bucketName: hytree1-1305365906
+    AllowTypes:
+      -  audio/mpeg
+      -  audio/wav
+      -  audio/aac
+      -  audio/flac
+      -  audio/amr
+      -  audio/3gp
+      -  audio/mp4
+      -  audio/wma
+      -  audio/ogg
+      -  audio/ape
